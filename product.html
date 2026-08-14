@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Collection | Inspire Then Die</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { onyx: '#121212', gold: '#C5A059' } } } }
+  </script>
+</head>
+<body class="bg-onyx text-white font-sans">
+  <header class="sticky top-0 z-50 bg-onyx/90 border-b border-gray-800 px-6 py-4 flex justify-between items-center">
+    <a href="index.html" class="text-2xl font-bold text-gold">INSPIRE THEN DIE</a>
+    <nav class="hidden md:flex space-x-8 text-sm font-semibold">
+      <a href="index.html" class="hover:text-gold">HOME</a>
+      <a href="about_us.html" class="hover:text-gold">ABOUT US</a>
+      <a href="product.html" class="text-gold border-b border-gold pb-1">SHOP COLLECTION</a>
+      <a href="vip_login.html" class="hover:text-gold">VIP PORTAL</a>
+      <a href="contact.html" class="hover:text-gold">STORE LOCATOR</a>
+    </nav>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-6 py-12">
+    <h1 class="text-3xl font-bold mb-8">EXCLUSIVE CATALOGUE</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- Filter Sidebar -->
+      <aside class="bg-zinc-900 p-6 rounded border border-zinc-800 h-fit">
+        <h2 class="font-bold text-gold mb-4">Categories</h2>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="#" class="text-white">All Products</a></li>
+          <li><a href="#" class="hover:text-gold">Graphic Hoodies</a></li>
+          <li><a href="#" class="hover:text-gold">Outerwear & Leather</a></li>
+          <li><a href="#" class="hover:text-gold">Distressed Denim</a></li>
+          <li><a href="#" class="hover:text-gold">Bespoke Footwear[cite: 7, 8]</a></li>
+        </ul>
+      </aside>
+
+      <!-- Products Grid -->
+      <div class="md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-zinc-900 p-4 rounded border border-zinc-800">
+          <div class="h-64 bg-zinc-800 rounded flex items-center justify-center text-gray-500 mb-4">[Hoodie Image]</div>
+          <h3 class="font-bold">Legacy Graphic Hoodie</h3>
+          <p class="text-gold font-bold">R 3,800.00 ZAR</p>
+          <a href="cart.html" class="block text-center mt-4 bg-gold text-onyx font-bold py-2 rounded">Add to Bag</a>
+        </div>
+        <div class="bg-zinc-900 p-4 rounded border border-zinc-800">
+          <div class="h-64 bg-zinc-800 rounded flex items-center justify-center text-gray-500 mb-4">[Jacket Image]</div>
+          <h3 class="font-bold">Jozi Leather Jacket</h3>
+          <p class="text-gold font-bold">R 14,500.00 ZAR</p>
+          <a href="cart.html" class="block text-center mt-4 bg-gold text-onyx font-bold py-2 rounded">Add to Bag</a>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
