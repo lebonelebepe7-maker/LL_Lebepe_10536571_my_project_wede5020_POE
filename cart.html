@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Bag | Inspire Then Die</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { onyx: '#121212', gold: '#C5A059' } } } }
+  </script>
+</head>
+<body class="bg-onyx text-white font-sans">
+  <header class="sticky top-0 z-50 bg-onyx/90 border-b border-gray-800 px-6 py-4 flex justify-between items-center">
+    <a href="index.html" class="text-2xl font-bold text-gold">INSPIRE THEN DIE</a>
+    <a href="product.html" class="text-sm text-gray-400 hover:text-white">← Continue Shopping</a>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 py-12">
+    <h1 class="text-3xl font-bold mb-8">YOUR SHOPPING BAG</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Order Items -->
+      <div class="md:col-span-2 space-y-4">
+        <div class="bg-zinc-900 p-4 rounded border border-zinc-800 flex justify-between items-center">
+          <div>
+            <h3 class="font-bold">Legacy Graphic Hoodie</h3>
+            <p class="text-gray-400 text-sm">Size: L • Quantity: 1</p>
+          </div>
+          <span class="text-gold font-bold">R 3,800.00</span>
+        </div>
+      </div>
+
+      <!-- Checkout Summary -->
+      <div class="bg-zinc-900 p-6 rounded border border-zinc-800 h-fit space-y-4">
+        <h2 class="font-bold border-b border-zinc-800 pb-2">ORDER SUMMARY</h2>
+        <div class="flex justify-between text-sm"><span>Subtotal</span><span>R 3,800.00</span></div>
+        <div class="flex justify-between text-sm"><span>Courier Guy Door-to-Door</span><span>R 150.00</span></div>
+        <div class="flex justify-between font-bold text-lg text-gold border-t border-zinc-800 pt-2">
+          <span>Total</span><span>R 3,950.00</span>
+        </div>
+        <button class="w-full bg-gold text-onyx font-bold py-3 rounded hover:bg-white transition">PROCEED TO PAYFAST / OZOW CHECKOUT</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
